@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music System</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.jpg" alt="Music logo" class="logo">Musiclay</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songlist">
+            <hi>Welcome  to Musiclay</hi>
+            <div class="songitemcontainer">
+                <div class="songitem">
+                    <img src="Movement.jpg" alt="1">
+                    <span>Movement  </span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('movement.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="betterday.webp" alt="1">
+                    <span>Better Day</span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('betterday.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="Etharealvistas.webp" alt="1">
+                    <span>Sprite Gone  </span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('ethereal.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="forher.jpg" alt="1">
+                    <span>Forgive Me   </span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('forher.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="Solitude.webp" alt="1">
+                    <span>Solitude In </span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('solitude.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="Titanum.webp" alt="1">
+                    <span>Titan Scrue  </span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('titanum.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="Trapjpg.jpg" alt="1">
+                    <span>Trap  Fruit</span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('trap.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="Unlockme.webp" alt="1">
+                    <span>Unlock Me </span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('unlockme.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="songitem">
+                    <img src="mucover.jpg" alt="1">
+                    <span>Eco friend</span>
+                    <span class="timestamp">05:34</span>
+                    <button class="playclick" onclick="playSong('ecotechnology.mp3')"><i class="fa-solid fa-play"></i></button>
+                </div>
+            
+               
+            </div>
+        </div>
+        <div class="songbanner"></div>
+
+    </div>
+
+    <div class="bottom">
+        <section id="player">
+            <audio id="audioPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+            
+        </section>
+        <div class="songinfo">
+            <img src="musicgif.gif" width="43px" alt="">
+            <img src="musicgif.gif" width="43px" alt="">
+            <img src="musicgif.gif" width="43px" alt="">
+        </div>
+    </div>
+
+
+
+
+   <script>
+        console.log('Welcome to Musiclay');
+
+
+    function playSong(song) {
+    var audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.src = song;
+    audioPlayer.play();
+}
+    </script>
+    
+   
+       
+</body>
+</html>
